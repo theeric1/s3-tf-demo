@@ -4,7 +4,6 @@ resource "aws_kms_key" "main" {
   deletion_window_in_days = var.kms_key_deletion_window
 }
 
-
 # Create the KMS key alias for easier reference
 resource "aws_kms_alias" "main" {
   name          = var.kms_alias_name

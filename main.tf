@@ -10,7 +10,7 @@ terraform {
 provider "aws" {
   region = var.aws_region
 }
-
+// Reference S3 module location and vars
 module "s3-bucket-test" {
   source              = "./modules/s3-bucket-test"
   bucket_name         = var.bucket_name
